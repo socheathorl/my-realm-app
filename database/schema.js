@@ -11,7 +11,7 @@ const TaskSchema = {
 };
 
 const databaseOptions = {
-  path: "task.realm",
+  path: process.env.DB_PATH,
   schema: [TaskSchema],
 };
 
